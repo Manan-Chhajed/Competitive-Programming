@@ -1,4 +1,4 @@
-/* Manan Chhajed */
+
 // Large exponentiation using Binary Multiplication
 #include <bits/stdc++.h>
 
