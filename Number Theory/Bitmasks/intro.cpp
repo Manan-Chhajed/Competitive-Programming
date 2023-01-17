@@ -14,5 +14,6 @@ void solve()
     // to set a bit --> mask = {0, 0, 0}
     // mask = (mask | (1 << days)) --> sets the dayth bit
 
-    // __builtin_popcountll to find the number of set bits
+    // __builtin_popcountll to find the number of set bits --> basically O(1) 
+    // can say O(log n) but mostly bit operations are very fast so O(1)
 }
