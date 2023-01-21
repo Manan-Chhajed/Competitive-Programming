@@ -1,0 +1,43 @@
+1.  If we see x and x+1, binary search could be applied.
+2. below the binart search condition has while (l + 1 < r) 
+3. and l = mid or r = mid
+4. this is because we are not searching for anything but finding the minimum answer.
+
+void solve()
+{
+    int i, j, k, n, m;
+    cin >> n >> m;
+    vector<int> tot(n + 1, 0);
+    Fo(i, 1, m)
+    {
+        cin >> k;
+        tot[k]++; // tells the no. of tasks worker k is proficient in
+    }
+    int l, r;
+    l = 0, r =  1e6;
+    while (l + 1 < r)
+    {
+        int mid = (l + r) / 2;
+        ull done = 0;
+        Fo(i, 1, n)
+        {
+            if (tot[i] >= mid)
+            {
+                done += mid;
+            }
+            else
+            {
+                done += tot[i] + (mid - tot[i]) / 2;
+            }
+        }
+        if (done >= m)
+        {
+            r = mid;
+        }
+        else
+        {
+            l = mid;
+        }
+    }
+    cout << r << nl;
+}
