@@ -1,5 +1,5 @@
 https://codeforces.com/problemset/problem/1701/C
-1.  If we see x and x+1, binary search could be applied.
+1. If we see x and x+1 i.e. if work done in x days then can also be done in x + 1 days, binary search could be applied.
 2. below the binart search condition has while (l + 1 < r) 
 3. and l = mid or r = mid
 4. this is because we are not searching for anything but finding the minimum answer.
