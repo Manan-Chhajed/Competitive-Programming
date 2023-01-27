@@ -1,7 +1,7 @@
 // (a/b) % M == (a * b^-1) % M
 //             == ((a%M) * (b^-1 % M)) % M
 
-// b^-1 % M --> Modular Multiplicative inverse of b
+// b^-1 % M --> Modular Multiplicative inverse of a
 
 /* 
   a*b == 1
