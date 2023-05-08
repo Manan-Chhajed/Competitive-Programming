@@ -9,7 +9,7 @@
 vector<int> segTree;
 int merge(int l, int r)
 {
-    return l ^ r;
+    return l + r;
 }
 
 void build(vector<int>& arr, int start, int end, int index)
