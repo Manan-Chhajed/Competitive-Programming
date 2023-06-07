@@ -61,7 +61,7 @@ struct LazySGT {
         if (start > right || end < left)
             return Node();
         if (start >= left && end <= right){
-            pushdown(index, start, end);
+            // pushdown(index, start, end); --> mostly not needed
             return tree[index];
         }
         pushdown(index, start, end);
