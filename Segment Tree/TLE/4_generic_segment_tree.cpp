@@ -81,3 +81,13 @@ struct Update1 {
         a.val = val; // may change
     }
 };
+
+void solve()
+{
+    ll n = 4;
+    vll arr = {1, 2, 3, 4};
+    SegTree<Node1, Update1> seg = SegTree<Node1, Update1>(n, arr);
+    seg.make_update(2, 10);
+    Node1 ans = seg.make_query(0, 3);
+    cout << ans.val << nl;
+}
