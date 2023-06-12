@@ -1,5 +1,6 @@
 // O(VlogV + ElogV)
 // Single Source Shortest Path
+// Negative edges / cycle won't work
 
 void Dijkstra(int s, int n, vector<ll> &dist, vector<int> &parent, vector<pair<int, ll>> *adj)
 {
