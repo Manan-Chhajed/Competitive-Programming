@@ -5,10 +5,10 @@
   
   # Intuition of binary lifting
   - Store parents in power of 2
-  - So, instead of k steps to reach a parent, now you cna reach in log(k) steps
+  - So, instead of k steps to reach a parent, now you can reach in log(k) steps
   - now store, par[node][x] i.e. x is 2^k th node
   - par[node][x] = par[par[node][x-1][x-1]
-  
+*/
 void dfs(ll node, ll par, vll adj[], vector<vll> &dp)
 {
     dp[node][0] = par;
@@ -52,7 +52,7 @@ void solve()
         cout << node << nl;
     }
 }
-  
+/*  
   # LCA using binary lifting
   - bring them to same level using binary lifting
   - move a and b to every unequal node (16 to 0)
