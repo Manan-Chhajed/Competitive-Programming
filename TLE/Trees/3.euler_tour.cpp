@@ -1,9 +1,9 @@
 /* 
   # Euler tour - path traced by dfs (flat representation of tree in order of dfs)
-  - LCA of a and b is the lowest level node b/w first occurence of a and b
   
 ------------------------------------------------------------------------------------------------------------------------------------------
   - Type 1
+  - LCA of a and b is the lowest level node b/w first occurence of a and b
 */
 vector<int> flat;
 map<int, int> mp;
@@ -45,6 +45,7 @@ void solve()
 /*
 ------------------------------------------------------------------------------------------------------------------------------------------
   - Type 2
+  - B/w 2 occurrences of a node, there is the subtree of the node
 */
 vector<int> flat;
 map<int, pair<int, int>> mp;
