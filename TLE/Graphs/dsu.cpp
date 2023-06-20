@@ -1,5 +1,10 @@
 /* 
-  DSU
+  DSU Applications
+  - Kruskal's Algo
+    - Add min. weight edges to DSU (if not connected add else leave)
+    - We get the MST
+
+  - 
 */
 
 #include<bits/stdc++.h>
