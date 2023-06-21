@@ -44,6 +44,13 @@ void solve() {
             }
         }
     }
+    // checking for negative loops
+    for (int i = 1; i <= n; i++) {
+        if (cost[i][i] < 0) {
+            cout << "Negative loop exits" << "\n";
+            break;
+        }
+    }
 }
 
 int main() {
