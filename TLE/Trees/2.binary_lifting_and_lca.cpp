@@ -9,6 +9,8 @@
   - So, instead of k steps to reach a parent, now you can reach in log(k) steps
   - now store, par[node][x] i.e. x is 2^k th node
   - par[node][x] = par[par[node][x-1][x-1]
+
+  # https://leetcode.com/problems/kth-ancestor-of-a-tree-node/description/
 */
 void dfs(ll node, ll par, vll adj[], vector<vll> &dp)
 {
