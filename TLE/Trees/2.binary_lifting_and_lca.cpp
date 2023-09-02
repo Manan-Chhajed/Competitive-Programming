@@ -1,6 +1,7 @@
 /* 
   # Print the kth parent of a node
   - Just do a dfs and find parent array, while(k--) node = par[node]
+  
   # Now, what if we need to calculate for q such nodes --> TLE
   
   # Intuition of binary lifting
