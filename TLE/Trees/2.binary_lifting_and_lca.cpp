@@ -59,6 +59,8 @@ void solve()
   # LCA using binary lifting
   - bring them to same level using binary lifting
   - move a and b to every unequal node (16 to 0)
+
+  # https://www.spoj.com/problems/LCASQ/
 */
 void dfs(ll node, ll par, vll adj[], vector<vll> &dp, vll& level, ll l = 0)
 {
