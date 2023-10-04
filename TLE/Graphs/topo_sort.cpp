@@ -7,6 +7,7 @@
     - 
 */
 // KIND OF ERRORS, CHECK USACO GUIDE
+// this is correct https://leetcode.com/problems/course-schedule/submissions/1066700639/
 void topoSort(int node, vector<int>& indegree, vector<int>& topo, vector<int>&vis, vector<int> adj[]) {
     queue<int> q;
     q.push(node);
