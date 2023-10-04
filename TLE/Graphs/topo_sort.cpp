@@ -6,6 +6,7 @@
     - Maintain an indegree array
     - 
 */
+// KIND OF ERRORS, CHECK USACO GUIDE
 void topoSort(int node, vector<int>& indegree, vector<int>& topo, vector<int>&vis, vector<int> adj[]) {
     queue<int> q;
     q.push(node);
