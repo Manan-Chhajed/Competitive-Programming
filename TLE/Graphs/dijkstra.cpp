@@ -1,4 +1,4 @@
-// O(VlogV + ElogV)
+// O(V + ElogV)
 // Single Source Shortest Path
 // Negative edges / cycle won't work
 
