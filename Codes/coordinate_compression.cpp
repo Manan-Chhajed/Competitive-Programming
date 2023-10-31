@@ -8,3 +8,5 @@ for (ll i = 0; i < n; ++i)
 }
 //original value of a[i] can be obtained through d[a[i]]
 // https://codeforces.com/blog/entry/84164
+// https://cses.fi/problemset/task/1144
+// https://usaco.guide/problems/cses-1144/user-solutions
