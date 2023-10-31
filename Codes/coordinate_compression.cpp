@@ -1,4 +1,4 @@
- // coordinate compression
+// coordinate compression
 vector<ll> d = a;
 sort(d.begin(), d.end());
 d.resize(unique(d.begin(), d.end()) - d.begin());
