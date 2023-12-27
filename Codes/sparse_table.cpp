@@ -7,4 +7,6 @@
     - then you can find for 1 to 4 and any range such that you reach end of query array (i.e. reach 7)
     - so you can choose 1 to 4 and 3 to 7, since idempotent, overlap of the segment is fine
     - Idempotent means say f(x, x) = x, e.g. min, max, gcd, bitwise and, bitwise or
+    - TC --> O(2) i.e. O(1) for 1 query
+    - But still preprocessing of O(nlogn)
 */
