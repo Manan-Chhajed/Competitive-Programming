@@ -12,6 +12,8 @@
     - But still preprocessing of O(nlogn)
 */
 
+// https://www.spoj.com/problems/RMQSQ/
+
 #include<bits/stdc++.h>
 using namespace std;
 
