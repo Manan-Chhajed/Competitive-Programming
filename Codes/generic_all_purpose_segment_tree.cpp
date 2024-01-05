@@ -1,5 +1,8 @@
 // https://cses.fi/problemset/task/1648/
 
+// Custom structure
+// https://cses.fi/paste/75db46f4d43eb3567bc9bf/
+
 #include<bits/stdc++.h>
 using namespace std;
 
