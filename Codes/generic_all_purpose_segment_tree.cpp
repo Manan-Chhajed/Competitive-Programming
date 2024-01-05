@@ -69,6 +69,8 @@ struct Lsegtree {
 
     void push_down(ll v, ll tl, ll tr)
     {
+        // for the below line to work, make sure the "==" operator is defined for it
+        // if not an integer
         if (lazy[v] == identity_update)return;
         st[v] = apply(st[v], lazy[v], tl, tr);
         if (2 * v + 2 < 4 * n)
