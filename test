@@ -1,7 +1,0 @@
-https://docs.google.com/document/d/1EUTucOFpmHPnblOXO0J7hEyVH0RvM91j1pTO60AdzVM/edit
-
-https://codeforces.com/problemset/problem/1526/B
-
-11a + 111b = x
-take mod 111
-then, (11a) % 111 = x % 111
