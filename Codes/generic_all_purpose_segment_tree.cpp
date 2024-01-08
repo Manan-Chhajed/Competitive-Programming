@@ -23,8 +23,8 @@ using ll = long long;
 template<class T, class U>
 // T -> node, U->update.
 struct Lsegtree {
-    vector<T>st;
-    vector<U>lazy;
+    vector<T> st;
+    vector<U> lazy;
     ll n;
     T identity_element;
     U identity_update;
@@ -44,7 +44,7 @@ struct Lsegtree {
         return ans;
     }
 
-    void buildUtil(ll v, ll tl, ll tr, vector<T>&a)
+    void buildUtil(ll v, ll tl, ll tr, vector<T> &a)
     {
         if (tl == tr)
         {
@@ -75,7 +75,7 @@ struct Lsegtree {
     {
         // for the below line to work, make sure the "==" operator is defined for it
         // if not an integer
-        if (lazy[v] == identity_update)return;
+        if (lazy[v] == identity_update) return;
         st[v] = apply(st[v], lazy[v], tl, tr);
         if (2 * v + 2 < 4 * n)
         {
@@ -105,7 +105,7 @@ struct Lsegtree {
     void updateUtil(ll v, ll tl, ll tr, ll l, ll r, U upd)
     {
         push_down(v, tl, tr);
-        if (tr < l or tl > r)return;
+        if (tr < l or tl > r) return;
         if (tl >= l and tr <= r)
         {
             lazy[v] = combineUpdate(lazy[v], upd, tl, tr);
