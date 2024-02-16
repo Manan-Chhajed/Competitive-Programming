@@ -1,6 +1,8 @@
 /* 
   - Meet in the Middle algo
   - https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/description/
+  - Another cool trick to find count of particular value in sorted array using binary search
+    - upper_bound - lower_bound
 */
 
 /* 
