@@ -1,5 +1,0 @@
-Two Pointers.
-i = 0, j = 0, while(i < n && j < m)
-1. sort both the arrrays
-2. if possible give the apartment
-3. else i++ or j++ depending on case
