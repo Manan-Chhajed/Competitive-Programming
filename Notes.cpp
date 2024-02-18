@@ -1,4 +1,10 @@
 /* 
+  - Find diameter of tree
+    - Take random node, find farthest node from it, that node will be one end point of a diameter.
+    - From that end, do dfs to find farthest node from it, other end of diameter.
+*/
+
+/* 
   - Meet in the Middle algo
   - https://leetcode.com/problems/partition-array-into-two-arrays-to-minimize-sum-difference/description/
   - Another cool trick to find count of particular value in sorted array using binary search
