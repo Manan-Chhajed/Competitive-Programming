@@ -2,6 +2,7 @@
   - Find diameter of tree
     - Take random node, find farthest node from it, that node will be one end point of a diameter.
     - From that end, do dfs to find farthest node from it, other end of diameter.
+    - Proof --> https://codeforces.com/blog/entry/60440?#comment-443378
 */
 
 /* 
