@@ -1,4 +1,10 @@
 /* 
+  - Small to large merging in trees
+    - https://codeforces.com/contest/1923/problem/E
+    - Some good blogs are there on codeforces
+*/
+
+/* 
   - Find diameter of tree
     - Take random node, find farthest node from it, that node will be one end point of a diameter.
     - From that end, do dfs to find farthest node from it, other end of diameter.
