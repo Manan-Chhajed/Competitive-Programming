@@ -4,7 +4,7 @@
   - Delete
 
   - Count of string s --> then maintain a cnt variable with the Node structure
-  - Count words whose prefix is s --> maintain another variable scnt.a
+  - Count words whose prefix is s --> maintain another variable scnt
 
   - Trie on numbers
     - Convert to binary string
