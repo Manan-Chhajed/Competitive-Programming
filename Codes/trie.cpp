@@ -91,6 +91,66 @@ void solve()
     }
 }
 
+// Improved version
+class Trie {
+private:
+    struct TrieNode
+    {
+        TrieNode* arr[26] {};
+        bool flag = false;
+    };
+
+    TrieNode* root;
+
+public:
+    Trie()
+    {
+        root = new TrieNode();
+    }
+
+    void insert(const string& s)
+    {
+        TrieNode* node = root;
+        for (char c : s)
+        {
+            if (node->arr[c - 'a'] == nullptr)
+            {
+                node->arr[c - 'a'] = new TrieNode();
+            }
+            node = node->arr[c - 'a'];
+        }
+        node->flag = true;
+    }
+
+    bool search(const string& s)
+    {
+        TrieNode* node = root;
+        for (char c : s)
+        {
+            if (node->arr[c - 'a'] == nullptr)
+            {
+                return false;
+            }
+            node = node->arr[c - 'a'];
+        }
+        return node->flag;
+    }
+
+    bool startsWith(const string& s)
+    {
+        TrieNode* node = root;
+        for (char c : s)
+        {
+            if (node->arr[c - 'a'] == nullptr)
+            {
+                return false;
+            }
+            node = node->arr[c - 'a'];
+        }
+        return true;
+    }
+};
+
 /* 
   - Given arr[] and x, find the max value of x ^ arr[i]
 */
