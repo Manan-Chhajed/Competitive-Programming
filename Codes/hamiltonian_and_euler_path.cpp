@@ -10,5 +10,5 @@
 
   - Euler's circuit
     - It states that if all the vertices of a graph component have an even degree (Excluding 0),
-    - then it must have an Euler's Circuit in it and Euler's Circuit can start and end at any vertex.
+      then it must have an Euler's Circuit in it and Euler's Circuit can start and end at any vertex.
 */
