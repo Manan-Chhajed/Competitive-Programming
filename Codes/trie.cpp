@@ -214,3 +214,78 @@ void solve()
     }
     cout << t.getMaxXor(x) << "\n";
 }
+
+// Improved Version
+#include <iostream>
+using namespace std;
+
+struct Node {
+    Node* arr[2];
+    Node() {
+        arr[0] = nullptr;
+        arr[1] = nullptr;
+    }
+};
+
+class Trie {
+    Node* root;
+
+public:
+    Trie() : root(new Node()) {}
+
+    void insert(int x) {
+        Node* node = root;
+        for (int i = 30; i >= 0; i--) {
+            int bit = ((x >> i) & 1);
+            if (node->arr[bit] == nullptr)
+                node->arr[bit] = new Node();
+            node = node->arr[bit];
+        }
+    }
+
+    int getMaxXor(int x) {
+        Node* node = root;
+        int max_xor = 0;
+        for (int i = 30; i >= 0; i--) {
+            int bit = ((x >> i) & 1);
+            int required_bit = 1 - bit;
+            if (node->arr[required_bit] != nullptr) {
+                node = node->arr[required_bit];
+                max_xor |= (1 << i);
+            } else {
+                node = node->arr[bit];
+            }
+        }
+        return max_xor;
+    }
+
+    ~Trie() {
+        deleteTree(root);
+    }
+
+private:
+    void deleteTree(Node* node) {
+        if (node) {
+            deleteTree(node->arr[0]);
+            deleteTree(node->arr[1]);
+            delete node;
+        }
+    }
+};
+
+void solve() {
+    int n, x;
+    cin >> n >> x;
+    int arr[n];
+    Trie t;
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+        t.insert(arr[i]);
+    }
+    cout << t.getMaxXor(x) << "\n";
+}
+
+int main() {
+    solve();
+    return 0;
+}
